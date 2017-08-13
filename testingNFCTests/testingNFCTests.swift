@@ -3,7 +3,7 @@
 //  testingNFCTests
 //
 //  Created by Alec O'Connor on 6/6/17.
-//  Copyright © 2017 Universal Orlando. All rights reserved.
+//  Copyright © 2017 Alec O'Connor. All rights reserved.
 //
 
 import XCTest

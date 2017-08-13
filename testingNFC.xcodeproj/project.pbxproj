@@ -36,6 +36,7 @@
 		F723E7E71EE718F5000746E7 /* testingNFCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testingNFCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F723E7EB1EE718F5000746E7 /* testingNFCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingNFCTests.swift; sourceTree = "<group>"; };
 		F723E7ED1EE718F5000746E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F736D8B81EE73A490033EB7C /* testingNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testingNFC.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				F723E7D51EE718F5000746E7 /* testingNFC */,
 				F723E7EA1EE718F5000746E7 /* testingNFCTests */,
 				F723E7D41EE718F5000746E7 /* Products */,
+				F736D8B51EE73A490033EB7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +84,7 @@
 				F723E7DA1EE718F5000746E7 /* Main.storyboard */,
 				F723E7DD1EE718F5000746E7 /* Assets.xcassets */,
 				F723E7DF1EE718F5000746E7 /* LaunchScreen.storyboard */,
+				F736D8B81EE73A490033EB7C /* testingNFC.entitlements */,
 				F723E7E21EE718F5000746E7 /* Info.plist */,
 			);
 			path = testingNFC;
@@ -94,6 +97,13 @@
 				F723E7ED1EE718F5000746E7 /* Info.plist */,
 			);
 			path = testingNFCTests;
+			sourceTree = "<group>";
+		};
+		F736D8B51EE73A490033EB7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +156,11 @@
 				TargetAttributes = {
 					F723E7D21EE718F5000746E7 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					F723E7E61EE718F5000746E7 = {
 						CreatedOnToolsVersion = 9.0;
@@ -347,10 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MD8P9DX634;
+				CODE_SIGN_ENTITLEMENTS = testingNFC/testingNFC.entitlements;
+				DEVELOPMENT_TEAM = 24LJMF7J23;
 				INFOPLIST_FILE = testingNFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.universalstudios.testingNFC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alecoconnor.testingiOS11NFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,10 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MD8P9DX634;
+				CODE_SIGN_ENTITLEMENTS = testingNFC/testingNFC.entitlements;
+				DEVELOPMENT_TEAM = 24LJMF7J23;
 				INFOPLIST_FILE = testingNFC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.universalstudios.testingNFC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alecoconnor.testingiOS11NFC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,6 +439,7 @@
 				F723E7F21EE718F5000746E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F723E7F31EE718F5000746E7 /* Build configuration list for PBXNativeTarget "testingNFCTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +448,7 @@
 				F723E7F51EE718F5000746E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
